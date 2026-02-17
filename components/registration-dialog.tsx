@@ -42,7 +42,7 @@ const initialForm: FormState = {
   college: "PSG College of Technology",
   year: "",
   teamName: "",
-  teamSize: 2,
+  teamSize: 3,
   experience: "beginner",
 }
 
@@ -208,7 +208,7 @@ export function RegistrationDialog({ trigger }: { trigger: ReactNode }) {
         {/* Header */}
         <div className="shrink-0 border-b border-border/60 bg-card/95 backdrop-blur-sm px-4 sm:px-6 pt-4 sm:pt-6 pb-3 sm:pb-4 space-y-3 sm:space-y-4">
           <div className="space-y-1">
-            <h2 className="font-[var(--font-bebas)] text-2xl sm:text-3xl tracking-tight">Register for EtherX 2026</h2>
+            <h2 className="font-[var(--font-bebas)] text-2xl sm:text-3xl tracking-tight">Register for International Cybersecurity Hackathon</h2>
             <p className="font-mono text-[10px] sm:text-xs text-muted-foreground">
               Sign in with your PSG Tech Google account to register.
             </p>
@@ -308,8 +308,8 @@ export function RegistrationDialog({ trigger }: { trigger: ReactNode }) {
 
               {/* Inline badges */}
               <div className="flex flex-wrap items-center gap-2">
-                <Badge variant="outline" className="font-mono text-[9px] sm:text-[10px]">PSG CSE, Msc, ECE and IT</Badge>
-                <Badge variant="secondary" className="font-mono text-[9px] sm:text-[10px]">2–4 members</Badge>
+                <Badge variant="outline" className="font-mono text-[9px] sm:text-[10px]">Open to all departments and years</Badge>
+                <Badge variant="secondary" className="font-mono text-[9px] sm:text-[10px]">3–5 members</Badge>
                 <div className="ml-auto flex items-center gap-2 font-mono text-[9px] sm:text-[10px] text-muted-foreground">
                   <span>{availableTeamOptions.length} open</span>
                   <span className="h-3 w-px bg-border" />
@@ -463,9 +463,9 @@ export function RegistrationDialog({ trigger }: { trigger: ReactNode }) {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="2">2 members</SelectItem>
                           <SelectItem value="3">3 members</SelectItem>
                           <SelectItem value="4">4 members</SelectItem>
+                          <SelectItem value="5">5 members</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
